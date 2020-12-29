@@ -1,4 +1,15 @@
-.texto-borde {
-  -webkit-text-stroke: 2px black;
-  color: white;
+h1{
+  -webkit-text-stroke: 2px #333399;
+  font-family: sans-serif;
+  color:white;
+}
+h5{
+  -webkit-text-stroke: 1px #333399;
+  font-family: sans-serif;
+  color:white;
+}
+a{
+  -webkit-text-stroke: 0.5px #333399;
+  font-family: sans-serif;
+  color:white;
 }
