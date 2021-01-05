@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <!-- link rel="stylesheet" href="styles/estilos.css"-->
+  <link rel="stylesheet" href="styles/estilos.css">
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -13,12 +13,12 @@
 <link rel="shortcut icon" href="images/bicycle_98662.ico">
 
 </head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <body>
   <!-- HEADER -->
   <div class="container-fluid d-flex flex-column bg-image" style="background-image: url('images/secuenciaheader.jpg');  height: 600px;">
         <!-- NAVEGADOR DE PAGINA -->
-      <div class="container-fluid">
+      <div class="container2">
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="#">MENDOZA PEDALEA</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -172,15 +172,17 @@
       <!-- LOGO -->
       <div class="container-fluid d-flex align-items-end" style= "height: 500px">
         <div class="container">
-          <h1 class="text-secondary">MENDOZA PEDALEA</h1>
-          <h5 class="text-secondary">Web de ciclismo integral</h5>
+          <div class="TITULO_1"><h1 class="text-secondary">MENDOZA PEDALEA</h1>
+          </div>
+          <div class="TITULO_2"><h4 class="text-secondary">Web de ciclismo integral</h4>
+          </div>
         </div>
       </div>
   </div>
-
-  <!-- OFERTAS -->
+    <!-- OFERTAS -->
   <div class="container-fluid d-flex flex-column align-items-center bg-secondary">
-    <h2>OFERTAS</h2>
+    <div class="bordeblanco"><h2>OFERTAS</h2>
+    </div>
     <div id="carouselExampleIndicators" class="carousel slide bg-secondary" data-ride="carousel" style="width: 90%">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -220,9 +222,10 @@
       </a>
     </div>
     <div class="container-fluid bg-secondary">
-      <h2>.</h2>
     </div>
   </div>
+  <!-- VIDEO -->
+  <iframe width="600" height="300" src="https://www.youtube.com/embed/x4LRLFGrliw" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <!-- SERVICIOS -->
     <div class="container-fluid bg-image" style="background-image: url('images/servicios.jpg');">
       <div class="container d-flex justify-content-center align-items-center">
@@ -247,7 +250,8 @@
   </div>
   <!-- NOVEDADES -->
   <div class="container-fluid d-flex flex-column align-items-center bg-secondary">
-    <h1>NOVEDADES</h1>
+    <div class="bordeblanco"><h2>NOVEDADES</h2>
+    </div>
     <div id="carouselExampleIndicators" class="carousel slide bg-secondary" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -287,16 +291,17 @@
       </a>
     </div>
     <div class="container-fluid bg-secondary">
-      <h2>.</h2>
     </div>
   </div>
+  <!-- MAPA -->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13403.176944314993!2d-68.8467196856133!3d-32.87716318094189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08e364f9bae5%3A0xd4eeacd8d95d30f!2sVendimiadores%20700-602%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1609819378007!5m2!1ses-419!2sar" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   <!-- PUBLICIDAD -->
   <div class="container-fluid d-flex flex-column justify-content-center align-items-center" style="background-color: rgb(126, 233, 126); height: 300px;">
     <a href="#"  rel="noopener" target="_blank">
-     <h1> PUBLICITE AQUI</h1>
+     <h1>PUBLICITE AQUI</h1>
     </a>
-  </div>
-  <!-- NOTICIAS EN EL MUNDO DEL CICLISMO -->
+</div>
+<!-- NOTICIAS EN EL MUNDO DEL CICLISMO -->
   <div class="container-fluid d-flex flex-column align-items-center">
     <h1>NOTICIAS</h1>
     <div class="container-fluid d-flex flex-row d-flex justify-content-between">
@@ -310,21 +315,17 @@
       <div class="media d-flex flex-column align-items-center">
         <a href="https://www.mtb-news.de/"  rel="noopener" target="_blank">
           <img class="d-BLOCK" style="height: 300px;"
-            src="images/mtb-news.jpg  "
+            src="images/mtb-news.jpg"
             alt="aqui va una imagen">
          </a>
       </div>
-      
-    </div>
-    <h2>.</h2> 
+   </div>
   </div>
    <!-- FOOTER -->
     <div class="container-fluid">
         <!-- VISTO RECIENTEMENTE-->
         <div class="col-sm">
           <h5>VISTO RECIENTEMENTE</h5>
-            <li></li>
-            <li></li>
         </div>
         <div class="container"></div>
         <div class="row">
@@ -349,14 +350,14 @@
           <!-- CATEGORIAS -->
           <div class="col-sm">
             <div class="footer-ecomm categories">
-              <h5>CATEGORIAS</h5>
-              <ul>                
+              <h5>CATEGORÍAS</h5>
+              <ul>
                 <li><a href="#">ACCESORIOS</a></li>
                 <li><a href="#">INDUMENTARIA</a></li>
                 <li><a href="#">COMPONENTES</a></li>
                 <li><a href="#">TALLER</a></li>
-                <li><a href="#">HIDRATACION</a></li>
-                <li><a href="#">RUEDAS</a></li>            
+                <li><a href="#">HIDRATACIÓN</a></li>
+                <li><a href="#">RUEDAS</a></li>
               </ul>
             </div>
           </div>
@@ -365,11 +366,11 @@
               <div class="col-sm">
                 <h5>SERVICIO AL CLIENTE</h5>
                 <ul>
-                  <li><a href="/customer-service/email-or-phone-us">CONTACTANOSs</a></li>
-                  <li><a href="/staticcontent/postageInfoPage.jsp">COSTOS DE ENVIOS</a></li>
+                  <li><a href="/customer-service/email-or-phone-us">CONTACTANOS</a></li>
+                  <li><a href="/staticcontent/postageInfoPage.jsp">COSTOS DE ENVÍO</a></li>
                   <li><a href="/customer-service/returning-an-item">DEVOLVER UN PRODUCTO</a></li>
-                  <li><a href="/customer-service/making-a-warranty-return">GARANTIA</a></li>
-                  <li><a href="/customer-service" class="more">VER MAS</a></li>
+                  <li><a href="/customer-service/making-a-warranty-return">GARANTÍA</a></li>
+                  <li><a href="/customer-service" class="more">VER MÁS</a></li>
                 </ul>
               </div>
             </div>
@@ -378,7 +379,7 @@
               <div class="footer-ecomm about-us">
                 <h5>ACERCA DE NOSOTROS</h5>
                 <ul>
-                  <li><a href="/customer-service/store-showroom-details">QUIENES SOMOS</a></li>
+                  <li><a href="/customer-service/store-showroom-details">QUIÉNES SOMOS</a></li>
                   <li><a href="http://hub.chainreactioncycles.com/events/" target="_blank"
                       title="Opens in a new browser window" class="elink">EVENTOS</a></li>
                 </ul>
@@ -389,13 +390,13 @@
             <div class="crcFooterContentSlot">
               <div class="crcFooterNewsletterSlot"
                 onclick="callTrack('_trackEvent','','Click Promo','-FooterNewsletterSlot-Merchandiser Slot');">
-                <h5>REGISTRATE &amp; AHORRA</h5>
-                <p>AQUIERE <strong>1% OFF</strong> EN TU PRIMERA COMPRA. SOLO PARA CLIENTES NUEVOS</p>
+                <h5>REGISTRATE &amp; AHORRÁ</h5>
+                <p>ADQUIERE <strong>15% OFF</strong> EN TU PRIMER COMPRA. SÓLO PARA CLIENTES NUEVOS</p>
               </div>
             </div>
             <div id="crcFooterNewsletterSignupContent" class="crcFooterNewsletterSignup">
               <label for="crcNewsletterEmail" class="crcFooterNewsletterSignupPrompt">
-                Ingresa tu direccion de correo electrónico</label>
+                Ingresá tu dirección de correo electrónico</label>
               <input type="text" id="crcNewsletterEmail" class="email_id" bean="ProfileFormHandler.email"
                 autocomplete="off" autocapitalize="off" autocorrect="off" maxlength="100">
               <div class="invalid_email footer_error_msg" style="display:none;">Your email address is not valid - please
@@ -409,9 +410,9 @@
             <div class="crcFooterContentSlot">
               <div class="footerPrivacyInfoDisclaimerSlot"
                 onclick="callTrack('_trackEvent','','Click Promo','-FooterPrivacyInfoDisclaimerSlot-Merchandiser Slot');">
-                Al registrarse usted acepta nuestros <a href="#" target="_blank">Terminos y conficiones</a> y 
-                <a href="#" target="_blank"> politicas de privacidad</a> </div>
-            </div>            
+                Al registrarse usted acepta nuestros <a href="#" target="_blank">Términos y condiciones</a> y
+                <a href="#" target="_blank">políticas de privacidad.</a> </div>
+            </div>
           </div>
         </div>
     </div>
