@@ -24,6 +24,7 @@
   -webkit-text-stroke: 0.4px white;
   font-family:sans-serif;
 }
+
 iframe {
       width: 100%;
       height: 400px;
@@ -121,11 +122,12 @@ iframe {
 /*BOTTOM BAR */
 /* Place the navbar at the bottom of the page, and make it stick */
 .bnavbar {
-  background-color: #333;
+  background-color: Black;
  /* overflow: hidden;*/
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 1;
 }
 /* Add a color to the active/current link*/
 .bnavbar a.active {
@@ -181,16 +183,19 @@ iframe {
 
 /* HEADER */
 .hcontainer{
-  .box {
+    background-image: url("images/secuenciaheader.jpg");
     display: flex;
     align-items: baseline;
-  }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
 }
 /*CARROUSEL DE OFERTAS*/
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
@@ -427,7 +432,7 @@ iframe {
   -webkit-filter: blur(8px);
 
   /* Full height */
-  height: 100%;
+  height: 500px;
 
   /* Center and scale the image nicely */
   background-position: center;
