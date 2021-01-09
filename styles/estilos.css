@@ -184,13 +184,18 @@ iframe {
 /* HEADER */
 .hcontainer{
     background-image: url("images/secuenciaheader.jpg");
-    display: flex;
-    align-items: baseline;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-start;
 }
+.logo{
+  transform: scale(0.2); /* Igual que: scaleX(2) scaleY(0.5) */
+  transform-origin: top right;
+}
+
 /*CARROUSEL DE OFERTAS*/
 
 /* Slideshow container */
