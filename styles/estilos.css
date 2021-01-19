@@ -555,3 +555,23 @@ iframe {
   display: table;
   clear: both;
 }
+
+/* FOOTER */
+.fcontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.vistorecientemente{
+    background-color: grey;
+}
+/* subfooter */
+.sfcontainer{
+    background-color: grey;
+    display: flex;
+    flex-direction: wrap;
+}
+/* redessociales */
+.redessociales{
+    background-color: grey;
+}
