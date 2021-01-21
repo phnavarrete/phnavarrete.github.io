@@ -32,3 +32,43 @@ MY SQL
 https://images.squarespace-cdn.com/content/v1/56a618bb9cadb6769974b5e5/1578332625296-CQLXVZIXE96LNEI4XJIE/ke17ZwdG
 BToddI8pDm48kHkDjhcwVdOOBTUpPg0Cmx97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHg
 DF5CVlOqpeNLcJ80NK65_fV7S1UQ4TGSBLX2Scc6fcPHWl34nnQw4_zmhMm5eqcaONkzjGuqWRKOCd3Esfzua9QhbWww/cwxwhistler19_emil_sequence.jpg?format=1500w
+
+
+------------------------------------------------------
+
+Consulta con profe Gonza 20/01/2021
+
+Achicar boostrap - poner fondo gris (de las bicis) carrousel 
+Más Z index al header o menos al logo 
+Cortar imagen (100 vh o menos de alto)
+Agregar titulo o frase en la pagina principal 
+Video- buscar otra ubicación - resta
+Secciones (agregar contenido) Ejemplo: taller - accesorios 
+Linkear las secciones con .html
+
+
+Partes de la página:
+
+1)Pantalla principal imagen o video con logo de la empresa 
+
+2)Pantalla servicios - idea de círculos poner una imagen de cada servicio sobre la imagen de las herramientas
+
+3) Sacar seccion publicidad / cambiar de lugar 
+
+4) Achicar carrusel, cambiar ubicación
+
+5) Video, cortar y poner en la pagina principal
+
+6) Mapa al final con datos de contacto
+
+7) Footer ver shimano 
+
+8) Mostrar productos slideshot o carrusel 
+
+9) Pestaña taller y accesorios 
+
+10) Pestaña iniciar secion o registrarse 
+
+
+
+Get element by id ------> Usar ID no CLASE. 
