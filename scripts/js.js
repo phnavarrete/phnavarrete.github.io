@@ -1,10 +1,13 @@
 /* NAVBAR SUPERIOR*/
 
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;window.onscroll = function() {
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {    document.getElementsByClassName("hmosnavbar").style.top = "0";  } else {
-    document.getElementsByClassName("hmosnavbar").style.top = "-50px";
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("hmosnavbarr").style.top = "0";
+  } else {
+    document.getElementById("hmosnavbar").style.top = "-50px";
   }
   prevScrollpos = currentScrollPos;
 }
