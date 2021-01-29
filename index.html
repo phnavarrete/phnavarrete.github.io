@@ -20,8 +20,8 @@
 <!-- NAVEGADOR DE PAGINA -->
 <div id="hmosnavbar">
   <a class=dropbtn href="#news">MENDOZA PEDALEA</a>
-  <a class=dropbtn href="#news">INICIAR SESION</a>
-  <a class=dropbtn href="#news">REGISTRARSE</a>
+  <a class=dropbtn href="layouts/iniciar_sesion.html">INICIAR SESION</a>
+  <a class=dropbtn href="layouts/registrarse.html">REGISTRARSE</a>
   <div class="dropdown">
     <button class="dropbtn">CONTACTOS<i class="fa fa-caret-down"></i></button>
     <div class="dropdown-content">
@@ -29,7 +29,7 @@
       <a href="#">ESTEBAN ALVAREZ</a>
     </div>
   </div>
-  <input type="text" placeholder="Search..">
+  <input class="searchbutton" type="text" placeholder="Search..">
 </div>
 <!-- BOTTOM MENU-->
 <div class="bnavbar">
@@ -43,8 +43,8 @@
         <a href="#">LUCES TRASERAS</a>
         <a href="#">ALFORJAS</a>
         <a href="#">CASCOS</a>
-        <a href="#">CADENAS</a>
-        <a  href="#">INFLADORES</a>
+        <a href="layouts/cadenas.html">CADENAS</a>
+        <a  href="layouts/infladores.html">INFLADORES</a>
       </div>
     </div>
     <!-- INDUMENTARIA-->
@@ -111,7 +111,7 @@
         <a class="dropdown-item" href="#">KIT DE REPARACIÓN</a>
       </div>
     </div>
-  </div>
+</div>
 <!-- HEADER-->
 <div class="hcontainer">
     <!-- LOGO -->
@@ -124,22 +124,22 @@
   <h1>SERVICIOS</h1>
   <div class="servicecontainer" style="text-align:center;">
       <div class="serviceitem">
-        <a href="service.html" target="_blank"><img alt="SERVICE STANDARD" src="images/service standard.png" width="100" height="100"></a>
+        <a href="layouts/service.html" target="_blank"><img alt="SERVICE STANDARD" src="images/service standard.png" width="100" height="100"></a>
         <h3>SERVICE STANDARD</h3>
         <p>Mantenimiento rápido, revisión general</p>
       </div>
       <div class="serviceitem">
-        <a href="servicefull.html" target="_blank"><img alt="SERVICE FULL" src="images/service full.png" width="100" height="100"></a>
+        <a href="layouts/servicefull.html" target="_blank"><img alt="SERVICE FULL" src="images/service full.png" width="100" height="100"></a>
         <h3>SERVICE FULL</h3>
         <p>Servicio completo, revisión en detalle</p>
       </div>
       <div class="serviceitem">
-        <a href="tubelizado.html" target="_blank"><img alt="TUBELIZADO" src="images/tubelizado.png" width="100" height="100"></a>
+        <a href="layouts/tubelizado.html" target="_blank"><img alt="TUBELIZADO" src="images/tubelizado.png" width="100" height="100"></a>
         <h3>TUBELIZADO</h3>
         <p>En cualquier tipo de cubierta y aro</p>
       </div>
       <div class="serviceitem">
-        <a href="centrado.html" target="_blank"><img alt="CENTRADO DE RUEDAS" src="images/centrado de ruedas.png" width="100" height="100"></a>
+        <a href="layouts/centrado.html" target="_blank"><img alt="CENTRADO DE RUEDAS" src="images/centrado de ruedas.png" width="100" height="100"></a>
         <h3>CENTRADO DE RUEDAS</h3>
         <p>Alineación y reparación de golpes</p>
       </div>
@@ -221,14 +221,14 @@
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13403.176944314993!2d-68.8467196856133!3d-32.87716318094189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08e364f9bae5%3A0xd4eeacd8d95d30f!2sVendimiadores%20700-602%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1609819378007!5m2!1ses-419!2sar"
   width="40%" height="400px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-<!--prueba de footer
-<div id="fond">
+<!-- SCRIPTS -->
+  <script src="scripts/js.js"></script>
 
-  <div id="fume">
-  <div id="masque"><img src="images/centrado de ruedas.png" width="193" height="84" alt="Capse" /></div>
+</body>
 
-</div>-->
 <!-- FOOTER -->
+
+<footer>
   <div class="fcontainer">
     <!-- VISTO RECIENTEMENTE-->
     <div class="vistorecientemente">
@@ -321,10 +321,6 @@
         </div>
     </div>
   </div>
-<!--FOOTER SHIMANO-->
-<!-- SCRIPTS -->
-  <script src="scripts/js.js"></script>
-
-</body>
+</footer>
 
 </html>
