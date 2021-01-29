@@ -67,8 +67,18 @@ Partes de la página:
 
 9) Pestaña taller y accesorios 
 
-10) Pestaña iniciar secion o registrarse 
+10) Pestaña iniciar sesion o registrarse 
 
 
 
 Get element by id ------> Usar ID no CLASE. 
+
+-----------------------------28/01---------------
+
+https://pixabay.com/es/
+
+https://www.cannondale.com/en/bikes/electric/e-mountain/habit-neo/habit-neo-2-smu/2020?sku=c65240m10sm
+
+http://m-electrica.com.ar/
+
+AGREGAR MARGEN AL TITULO DE SERVICIOS Y AGREGAR ALGUN FONDO DE TIPO MARCA DE AGUA
