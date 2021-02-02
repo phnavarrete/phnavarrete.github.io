@@ -174,11 +174,17 @@
 /*----------------------------------SERVICES----------------------------------*/
 /* CONTENEDOR DE SERVICIOS */
 .scontainer {
+  background-image: url("images/cadenass.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
   height: 40vh;
   display: flex;
   flex-direction: column;
   align-self: center;
   background-color: whitesmoke;
+  padding-top: 50px;
 }
 
 .servicecontainer {
@@ -317,7 +323,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: rgb(126, 202, 126);
+    background-color: #3498DB;
 }
 
 .vistorecientemente{
