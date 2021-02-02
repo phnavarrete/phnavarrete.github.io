@@ -162,6 +162,7 @@
     align-self: flex-start;
     height: 100vh;
     z-index: -1;
+    margin-top: 5vh;
 }
 .logo{
   transform: scale(0.2); /* Igual que: scaleX(2) scaleY(0.5) */
@@ -179,7 +180,7 @@
   display: flex;
   flex-direction: column;
   align-self: center;
-  padding-top: 10px;
+  padding: 10px 0 10px 0;
   
 }
 
@@ -223,6 +224,7 @@
   text-align: center;
   font-weight: bold ;
   background-color: whitesmoke;
+  padding: 10px 0 10px 0;
 }
 
 /* Hide the images by default */
@@ -319,8 +321,25 @@
 .fcontainer{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 80vh;
     background-color: #3498DB;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+}
+
+.fcontainer ul {
+  font-size: 13px;
+  list-style: none;
+  margin: 0 0 0 -1em;
+}
+.fcontainer li {
+  position: relative;
+}
+.fcontainer a {
+  display: block;
+  line-height: 3.333em;
+  padding: 0 10px 0 20px;
+  text-decoration: none;
 }
 
 .vistorecientemente{
