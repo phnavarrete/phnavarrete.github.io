@@ -164,7 +164,7 @@
     z-index: -1;
 }
 .logo{
-  transform: scale(0.4); /* Igual que: scaleX(2) scaleY(0.5) */
+  transform: scale(0.2); /* Igual que: scaleX(2) scaleY(0.5) */
   transform-origin: top right;
   margin: 5px;
   padding: 300px;
@@ -174,20 +174,17 @@
 /*----------------------------------SERVICES----------------------------------*/
 /* CONTENEDOR DE SERVICIOS */
 .scontainer {
-  background-image: url("images/cadenass.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   z-index: 2;
-  height: 40vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-self: center;
-  background-color: whitesmoke;
-  padding-top: 50px;
+  padding-top: 10px;
+  
 }
 
-.servicecontainer {
+.servicecontainer{
+  
   display: flex;
   justify-content: space-around;
   align-items: center;
