@@ -80,7 +80,7 @@
 }
 
 /* Style the search box inside the navigation bar */
-.hmosnavbar input[type=text] {
+.searchbutton[type=text]{
   float: right;
   padding: 6px;
   border: none;
@@ -97,7 +97,7 @@
   bottom: 0;
   width: 100%;
   z-index: 1;
-  margin-bottom: 12px;
+  margin-bottom: 0px;
 }
 /* Add a color to the active/current link*/
 .bnavbar a.active {
@@ -153,11 +153,19 @@
 
 /*----------------------------------HEADER----------------------------------*/
 .hcontainer{
+    background-image: url("images/secuenciaheader.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-start;
     height: 100vh;
     z-index: -1;
+    margin-top: 5vh;
 }
 .logo{
-  transform: scale(0.4); /* Igual que: scaleX(2) scaleY(0.5) */
+  transform: scale(0.2); /* Igual que: scaleX(2) scaleY(0.5) */
   transform-origin: top right;
   margin: 5px;
   padding: 300px;
@@ -167,14 +175,17 @@
 /*----------------------------------SERVICES----------------------------------*/
 /* CONTENEDOR DE SERVICIOS */
 .scontainer {
-  height: 40vh;
+  z-index: 2;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-self: center;
-  background-color: whitesmoke;
+  padding: 10px 0 10px 0;
+
 }
 
-.servicecontainer {
+.servicecontainer{
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -211,7 +222,9 @@
 .ncontainer {
   position: relative;
   text-align: center;
+  font-weight: bold ;
   background-color: whitesmoke;
+  padding: 10px 0 10px 0;
 }
 
 /* Hide the images by default */
@@ -304,46 +317,29 @@
   opacity: 1;
 }
 
-/*----------------------------------PRUEBA----------------------------------*/
-/*
-#fond{
-	height:586px;
-	width:753px;
-    margin: 0 auto;
-	background-color:#a1847a;
-}
-#fume{
-	width:753px; height:586px;
-	background-image:url(images/secuenciaheader.jpg);
-	background-position:100px 0;
-	background-repeat:no-repeat;
-
-    animation: defil 12s infinite;
-	animation-timing-function: linear;
-}
-#masque{
-	width:753px; height:586px;
-	background-image:url(images/service_standard.png);
-	background-repeat:no-repeat;
-	background-position:top center;
-}
-img {
-	margin-left:313px;
-	margin-top:485px;
-}
-
-@keyframes defil {
-    0%   {background-position:100px 0;}
-    100% {background-position:100px -1983px;}
-}*/
-
-
 /*----------------------------------FOOTER----------------------------------*/
 .fcontainer{
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    background-color: rgb(126, 202, 126);
+    height: 80vh;
+    background-color: #3498DB;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+}
+
+.fcontainer ul {
+  font-size: 13px;
+  list-style: none;
+  margin: 0 0 0 -1em;
+}
+.fcontainer li {
+  position: relative;
+}
+.fcontainer a {
+  display: block;
+  line-height: 3.333em;
+  padding: 0 10px 0 20px;
+  text-decoration: none;
 }
 
 .vistorecientemente{
@@ -361,11 +357,13 @@ img {
  ;
 }
 
-/*----------------------------------REGISTRARSE----------------------------------*/
+/*----------------------------------INICIAR SESION----------------------------------*/
+
 
 /* Add padding to containers */
-.container {
-  padding: 16px;
+.subrcontainer {
+  padding: 50px;
+  margin: 50px 0 0px 0;
 }
 
 /* Full-width input fields */
@@ -391,7 +389,7 @@ hr {
 
 /* Set a style for the submit/register button */
 .registerbtn {
-  background-color: #4CAF50;
+  background-color: #04AA6D;
   color: white;
   padding: 16px 20px;
   margin: 8px 0;
@@ -415,6 +413,7 @@ a {
   background-color: #f1f1f1;
   text-align: center;
 }
+
 
 /*----------------------------------PRODUCT CARDS----------------------------------*/
 
@@ -452,3 +451,4 @@ a {
 .card button:hover {
   opacity: 0.7;
 }
+
