@@ -13,8 +13,8 @@
     <!-- NAVEGADOR DE PAGINA -->
     <div id="hmosnavbar">
       <a class=dropbtn href="../index.html">MENDOZA PEDALEA</a>
-      <a class=dropbtn href="layouts/iniciar_sesion.html">INICIAR SESION</a>
-      <a class=dropbtn href="layouts/registrarse.html">REGISTRARSE</a>
+      <a class=dropbtn href="./iniciar_sesion.html">INICIAR SESION</a>
+      <a class=dropbtn href="./registrarse.html">REGISTRARSE</a>
       <div class="dropdown">
         <button class="dropbtn">CONTACTOS<i class="fa fa-caret-down"></i></button>
         <div class="dropdown-content">
@@ -107,14 +107,14 @@
     </div>
   <!-- DESCRIPCION -->
     <div class="subrcontainer">
-      <form action="action_page.php">
+      <form action="../php/login.php" method="POST">
         <div class="container">
           <h1>INICIAR SESION</h1>
           <p>Por favor, ingresar su usuario y contraseña.</p>
           <br>
       
           <label for="email"><b>Email</b></label>
-          <input class="inises" type="text" placeholder="Enter Email" name="email" id="email" required>
+          <input class="inises" type="email" placeholder="Enter Email" name="email" id="email" required>
       
           <label for="psw"><b>Password</b></label>
           <input class="inises" type="password" placeholder="Enter Password" name="psw" id="psw" required>
