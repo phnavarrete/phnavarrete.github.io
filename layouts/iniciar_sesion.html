@@ -13,8 +13,8 @@
     <!-- NAVEGADOR DE PAGINA -->
     <div id="hmosnavbar">
       <a class=dropbtn href="../index.html">MENDOZA PEDALEA</a>
-      <a class=dropbtn href="#news">INICIAR SESION</a>
-      <a class=dropbtn href="#news">REGISTRARSE</a>
+      <a class=dropbtn href="layouts/iniciar_sesion.html">INICIAR SESION</a>
+      <a class=dropbtn href="layouts/registrarse.html">REGISTRARSE</a>
       <div class="dropdown">
         <button class="dropbtn">CONTACTOS<i class="fa fa-caret-down"></i></button>
         <div class="dropdown-content">
@@ -106,36 +106,29 @@
         </div>
     </div>
   <!-- DESCRIPCION -->
-  <div class="subrcontainer">
-    <!--<form action="action_page.php">-->
     <div class="subrcontainer">
       <form action="action_page.php">
-      <div class="subrcontainer">
-        <h1>INGRESAR</h1>
-        <p>POR FAVOR LLENAR LOS CAMPOS PARA ACCEDER A TU CUENTA.</p>
-        <hr>
-      </div>
-      <div class="subrcontainer">
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" id="email" required>
-
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-
-        <label for="psw-repeat"><b>Repeat Password</b></label>
-        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-        <hr>
-
-        <p>By GHJFGJHGHcount you agree to our <a href="#">Terms & Privacy</a>.</p>
-        <button type="submit" class="registerbtn">Register</button>
-      </div>
+        <div class="container">
+          <h1>INICIAR SESION</h1>
+          <p>Por favor, ingresar su usuario y contraseña.</p>
+          <br>
+      
+          <label for="email"><b>Email</b></label>
+          <input class="inises" type="text" placeholder="Enter Email" name="email" id="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input class="inises" type="password" placeholder="Enter Password" name="psw" id="psw" required>
+      
+              
+          <p>al iniciar sesion estas aceptando nuestros<a href="#">terminos y condiciones</a>.</p>
+          <button type="submit" class="singinbtn">INICIAR SESION</button>
+        </div>
+      
+        <div class="container signin">
+          <p>Registrate, es gratis     <a class="registerbtn" href="layouts/registrarse.html">REGISTRARSE</a>.</p>
+        </div>
+      </form>
     </div>
-
-    <div class="container signin">
-      <p>Already have an account? <a href="#">Sign in</a>.</p>
-    </div>
-  </form>
-  </div>
   <!-- SCRIPTS -->
   <script src="scripts/js.js"></script>
 </body>

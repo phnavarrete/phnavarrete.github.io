@@ -150,76 +150,22 @@
 .dropup:hover .dropbtn {
   background-color: #2980B9;
 }
-/*----------------------------------BOTTOM BAR----------------------------------*/
-/* Place the navbar at the bottom of the page, and make it stick */
-.bnavbar {
-  background-color: Black;
- /* overflow: hidden;*/
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 1;
-  margin-bottom: 12px;
-}
-/* Add a color to the active/current link*/
-.bnavbar a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-/* Dropup Button */
-.dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 20px;
-  border: none;
-}
-
-/* The container <div> - needed to position the dropup content */
-.dropup {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropup content (Hidden by Default) */
-.dropup-content {
-  display: none;
-  position: absolute;
-  bottom: 50px;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropup */
-.dropup-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropup links on hover */
-.dropup-content a:hover {background-color: #ddd}
-
-/* Show the dropup menu on hover */
-.dropup:hover .dropup-content {
-  display: block;
-}
-
-/* Change the background color of the dropup button when the dropup content is shown */
-.dropup:hover .dropbtn {
-  background-color: #2980B9;
-}
 
 /*----------------------------------HEADER----------------------------------*/
 .hcontainer{
+    background-image: url("images/secuenciaheader.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-start;
     height: 100vh;
     z-index: -1;
+    margin-top: 5vh;
 }
 .logo{
-  transform: scale(0.4); /* Igual que: scaleX(2) scaleY(0.5) */
+  transform: scale(0.2); /* Igual que: scaleX(2) scaleY(0.5) */
   transform-origin: top right;
   margin: 5px;
   padding: 300px;
@@ -229,14 +175,17 @@
 /*----------------------------------SERVICES----------------------------------*/
 /* CONTENEDOR DE SERVICIOS */
 .scontainer {
-  height: 40vh;
+  z-index: 2;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-self: center;
-  background-color: whitesmoke;
+  padding: 10px 0 10px 0;
+
 }
 
-.servicecontainer {
+.servicecontainer{
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -273,7 +222,9 @@
 .ncontainer {
   position: relative;
   text-align: center;
+  font-weight: bold ;
   background-color: whitesmoke;
+  padding: 10px 0 10px 0;
 }
 
 /* Hide the images by default */
@@ -406,17 +357,16 @@
  ;
 }
 
+/*----------------------------------INICIAR SESION----------------------------------*/
 
-/*----------------------------------REGISTRARSE----------------------------------*/
 
-
-/* Add padding to containers 
-.rcontainer {
-  padding: 16px;
+/* Add padding to containers */
+.subrcontainer {
+  padding: 50px;
+  margin: 50px 0 0px 0;
 }
 
-
- Full-width input fields 
+/* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;
@@ -436,11 +386,10 @@ hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
--*/
 
 /* Set a style for the submit/register button */
 .registerbtn {
-  background-color: #4CAF50;
+  background-color: #04AA6D;
   color: white;
   padding: 16px 20px;
   margin: 8px 0;
@@ -464,6 +413,7 @@ a {
   background-color: #f1f1f1;
   text-align: center;
 }
+
 
 /*----------------------------------PRODUCT CARDS----------------------------------*/
 
@@ -501,3 +451,4 @@ a {
 .card button:hover {
   opacity: 0.7;
 }
+
