@@ -1,9 +1,13 @@
 <?php
 $user_ingresado = $_POST['email'];
-$password_ingresado = $_POST['pwd'];
+$password_ingresado = $_POST['psw'];
 $bbdd = [
-    'user'=> ['admin@admin.com'],
-    'user'=> ['1234']
+    'email'=> 'admin@admin.com',
+    'psw'=> '1234',
 ];
-print_r($datos);
+if ($bbdd['email'] == $user_ingresado and $bbdd['psw'] == $password_ingresado){
+  print('ACEPTADO');
+} else {
+  print('Error! VERIFIQUE LOS DATOS');
+}
 ?>
