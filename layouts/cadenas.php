@@ -1,3 +1,26 @@
+<?php
+// include 'config.php';
+// 1) Conexion
+// $conexion = mysqli_connect("localhost:3306", "usuario", "@a1b2c3@");
+$conexion = mysqli_connect("127.0.0.1", "root", "");
+
+mysqli_select_db($conexion, "prueba_cadenas"); 
+
+// ) Almacenamos los datos del envío POST
+// No se utiliza este paso en este caso puntual
+
+// 2) Preparar la orden SQL
+// Sintaxis SQL SELECT
+// SELECT * FROM nombre_tabla
+// => Selecciona todos los campos de la siguiente tabla
+// SELECT campos_tabla FROM nombre_tabla
+// => Selecciona los siguientes campos de la siguiente tabla
+$consulta = 'SELECT * FROM bbdd_prueba_cadenas';
+
+// 3) Ejecutar la orden y obtenemos los registros
+$datos = mysqli_query($conexion, $consulta);
+?>
+
 <!doctype html>
 <html lang="en">
   <link rel="stylesheet" href="styles/estilos.css">
@@ -106,35 +129,20 @@
       </div>
   </div>
   <!-- PRODUCT CARDS -->
+  <div style="height: 100px;">
+  </div>
   <div class="pccontainer">
-    <div style="height: 100px;">
-      
-    </div>
-
+   <?php
+    while ($reg = mysqli_fetch_array($datos)) { ?>
     <div class="card">
-      <img src="images/cadena.jpg" alt="Denim Jeans" style="width:100%">
-      <h1>Tailored Jeans</h1>
-      <p class="price">$19.99</p>
-      <p>Some text about the jeans..</p>
+      <h1><?php echo ucwords($reg['grupo'] . " " . $reg['subgrupo'] . " ") . strtoupper($reg['marca']); ?></h1>
+      <p class="price">$<?php echo $reg['precio']; ?></p>
+      <img src="data:image/png;base64, <?php echo base64_encode($reg['imagen']) ?>" alt="img" style="width:100%">
+      <p><?php echo ucwords($reg['descripcion'] . " " . $reg['marca'] . " ") . strtoupper($reg['subgrupo']); ?></p>
       <p><button>Add to Cart</button></p>
     </div>
-
-    <div class="card">
-      <img src="images/cadena.jpg" alt="Denim Jeans" style="width:100%">
-      <h1>Tailored Jeans</h1>
-      <p class="price">$19.99</p>
-      <p>Some text about the jeans..</p>
-      <p><button>Add to Cart</button></p>
-    </div>
-
-    <div class="card">
-      <img src="images/cadena.jpg" alt="Denim Jeans" style="width:100%">
-      <h1>Tailored Jeans</h1>
-      <p class="price">$19.99</p>
-      <p>Some text about the jeans..</p>
-      <p><button>Add to Cart</button></p>
-    </div>
-
+    <?php } ?>
+  </div>
   </div>
 <!-- FOOTER -->
   <div class="fcontainer">
