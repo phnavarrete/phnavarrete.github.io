@@ -1,8 +1,8 @@
 <?php
 // include 'config.php';
 // 1) Conexion
-// $conexion = mysqli_connect("localhost:3306", "usuario", "@a1b2c3@");
-$conexion = mysqli_connect("127.0.0.1", "root", "");
+$conexion = mysqli_connect("localhost:3306", "usuario", "@a1b2c3@");
+//$conexion = mysqli_connect("127.0.0.1", "root", "");
 
 mysqli_select_db($conexion, "prueba_cadenas"); 
 
@@ -129,21 +129,20 @@ $datos = mysqli_query($conexion, $consulta);
       </div>
   </div>
   <!-- PRODUCT CARDS -->
-  <div style="height: 100px;">
-  </div>
-  <div class="pccontainer">
-   <?php
+	<div style="height: 50px;">
+	</div>
+	<div class="pccontainer">
+	<?php
     while ($reg = mysqli_fetch_array($datos)) { ?>
     <div class="card">
-      <h1><?php echo ucwords($reg['grupo'] . " " . $reg['subgrupo'] . " ") . strtoupper($reg['marca']); ?></h1>
-      <p class="price">$<?php echo $reg['precio']; ?></p>
-      <img src="data:image/png;base64, <?php echo base64_encode($reg['imagen']) ?>" alt="img" style="width:100%">
-      <p><?php echo ucwords($reg['descripcion'] . " " . $reg['marca'] . " ") . strtoupper($reg['subgrupo']); ?></p>
-      <p><button>Add to Cart</button></p>
+		<img src="data:image/png;base64, <?php echo base64_encode($reg['imagen']) ?>" alt="img" style="width:100%">
+		<p class="price">$<?php echo $reg['precio']; ?></p>
+		<h1><?php echo ucwords($reg['subgrupo'] . " ") . strtoupper($reg['marca']); ?></h1>
+        <p><?php echo ucwords($reg['descripcion'] . " " ); ?></p>
+		<p><button>Add to Cart</button></p>
     </div>
-    <?php } ?>
-  </div>
-  </div>
+	<?php } ?>
+	</div>
 <!-- FOOTER -->
   <div class="fcontainer">
     <!-- VISTO RECIENTEMENTE-->
