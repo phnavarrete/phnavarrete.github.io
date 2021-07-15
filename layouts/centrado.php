@@ -15,7 +15,7 @@ mysqli_select_db($conexion, "prueba_cadenas");
 // => Selecciona todos los campos de la siguiente tabla
 // SELECT campos_tabla FROM nombre_tabla
 // => Selecciona los siguientes campos de la siguiente tabla
-$consulta = 'SELECT * FROM bbdd_prueba_cadenas';
+$consulta = 'SELECT * FROM servicios';
 
 // 3) Ejecutar la orden y obtenemos los registros
 $datos = mysqli_query($conexion, $consulta);
@@ -28,7 +28,7 @@ $datos = mysqli_query($conexion, $consulta);
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>CADENAS</title>
+<title>CENTRADO</title>
 <link rel="shortcut icon" href="images/bicycle_98662.ico">
 </head>
 <body>
@@ -42,7 +42,7 @@ $datos = mysqli_query($conexion, $consulta);
       <button class="dropbtn">CONTACTOS<i class="fa fa-caret-down"></i></button>
       <div class="dropdown-content">
         <a href="#">PABLO NAVARRETE</a>
-        <a href="#">ESTEBAN ALVAREZ</a>
+        <!--a href="#">ESTEBAN ALVAREZ</a-->
       </div>
     </div>
     <input class="searchbutton" type="text" placeholder="Search..">
