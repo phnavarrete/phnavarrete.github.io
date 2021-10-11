@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <link rel="stylesheet" href="styles/estilos1.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>MENDOZA PEDALEA</title>
+  <link rel="shortcut icon" href="images/bicycle_98662.ico">
+</head>
+<body>
+  <!-- HIDE MENU ON SCROLL -->
+    <!-- NAVEGADOR DE PAGINA -->
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="#home" class="active">Logo</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="hmosnavbar">
+          <a class=dropbtn href="./index.html">MENDOZA PEDALEA</a>
+          <a class=dropbtn href="layouts/iniciar_sesion.html">INICIAR SESION</a>
+          <a class=dropbtn href="layouts/registrarse.html">REGISTRARSE</a>
+          <a class=dropbtn href="layouts/admin.php">ADMINISTRADOR</a>
+          <div class="dropdown">
+            <button class="dropbtn">CONTACTOS<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+              <a href="#">PABLO NAVARRETE</a>
+              <a href="#">ESTEBAN ALVAREZ</a>
+            </div>
+          </div>
+          <input class="searchbutton" type="text" placeholder="Search..">
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- BOTTOM MENU-->
+    <div class="bnavbar">
+        <!-- ACCESORIOS-->
+        <div class="dropup">
+          <button class="dropbtn">ACCESORIOS</button>
+          <div class="dropup-content">
+            <a data-toggle="tooltip" data-placement="right" title="Tooltip on right" href="#"></a>
+            <a href="#">SOPORTE DE CELULAR</a>
+            <a href="#">LUCES DELANTERAS</a>
+            <a href="#">LUCES TRASERAS</a>
+            <a href="#">ALFORJAS</a>
+            <a href="#">CASCOS</a>
+            <a href="layouts/cadenas.php">CADENAS</a>
+            <a  href="layouts/infladores.html">INFLADORES</a>
+          </div>
+        </div>
+        <!-- INDUMENTARIA-->
+        <div class="dropup">
+          <button class="dropbtn">INDUMENTARIA</button>
+          <div class="dropup-content">
+            <a data-toggle="tooltip" data-placement="right" title="Tooltip on right" href="#"></a>
+            <a  href="#">REMERAS</a>
+            <a  href="#">CALZAS</a>
+            <a  href="#">MEDIAS</a>
+            <a  href="#">ZAPATILLAS</a>
+            <a  href="#">PAÑUELOS</a>
+          </div>
+        </div>
+        <!-- COMPONENTES-->
+        <div class="dropup">
+          <button class="dropbtn">COMPONENTES</button>
+          <div class="dropup-content">
+            <a data-toggle="tooltip" data-placement="right" title="Tooltip on right" href="#"></a>
+            <a href="#">PEDALES</a>
+            <a href="#">CUADROS</a>
+            <a href="#">MANUBRIOS</a>
+            <a href="#">CADENAS</a>
+            <a href="#">FRENOS</a>
+            <a href="#">LLANTAS</a>
+          </div>
+        </div>
+        <!-- TALLER-->
+        <div class="dropup">
+          <button class="dropbtn">TALLER</button>
+          <div class="dropup-content">
+            <a data-toggle="tooltip" data-placement="right" title="Tooltip on right" href="#"></a>
+            <a href="#">AJUSTES</a>
+            <a href="#">REPARACIONES</a>
+            <a href="#">CAMBIOS DE COMPONENTES</a>
+            <a href="#">TUBELIZADO</a>
+            <a href="#">PUESTA A PUNTO</a>
+            <a href="#">CAMBIO DE ACEITE DE FRENOS</a>
+            <a href="#">ARMADO DE BICICLETAS</a>
+            <a href="#">SERVICE</a>
+          </div>
+        </div>
+        <!-- HIDRATACION-->
+        <div class="dropup">
+          <button class="dropbtn">HIDRATACION</button>
+          <div class="dropup-content">
+            <a data-toggle="tooltip" data-placement="right" title="Tooltip on right" href="#"></a>
+            <a class="dropdown-item" href="#">POMOS</a>
+            <a class="dropdown-item" href="#">CAMEL BACK</a>
+            <a class="dropdown-item" href="#">BEBIDAS ENERGIZANTES</a>
+          </div>
+        </div>
+        <!-- RUEDAS-->
+        <div class="dropup">
+          <button class="dropbtn">RUEDAS</button>
+          <div class="dropup-content">
+            <a data-toggle="tooltip" data-placement="right" title="Tooltip on right" href="#"></a>
+            <a class="dropdown-item" href="#">RODADO 26</a>
+            <a class="dropdown-item" href="#">RODADO 27,5</a>
+            <a class="dropdown-item" href="#">RODADO 29</a>
+            <a class="dropdown-item" href="#">DESCENSO</a>
+            <a class="dropdown-item" href="#">RUTERA</a>
+            <a class="dropdown-item" href="#">CÁMARAS</a>
+            <a class="dropdown-item" href="#">KIT DE REPARACIÓN</a>
+          </div>
+        </div>
+    </div>
+  <!-- HEADER-->
+  <div class="hcontainer">
+      <!-- LOGO -->
+      <div class="logo" style="width:auto;";>
+        <img src="images/mendoza.png">
+      </div>
+  </div>
+  <!-- PHP -->
+      <?php
+    // include 'config.php';
+    // 1) Conexion
+    //$conexion = mysqli_connect("localhost:3306", "usuario", "@a1b2c3@");
+    $conexion = mysqli_connect("127.0.0.1", "root", "");
+
+    mysqli_select_db($conexion, "prueba_cadenas");
+
+    // ) Almacenamos los datos del envío POST
+    // No se utiliza este paso en este caso puntual
+
+    // 2) Preparar la orden SQL
+    // Sintaxis SQL SELECT
+    // SELECT * FROM nombre_tabla
+    // => Selecciona todos los campos de la siguiente tabla
+    // SELECT campos_tabla FROM nombre_tabla
+    // => Selecciona los siguientes campos de la siguiente tabla
+    $consulta = 'SELECT * FROM bbdd_prueba_cadenas';
+
+    // 3) Ejecutar la orden y obtenemos los registros
+    $datos = mysqli_query($conexion, $consulta);
+    ?>
+  <!-- SERVICIOS -->
+  <div class="scontainer" style="text-align:center;">
+    <div style="background-image: url(images/cadenass.jpg); width: 100%; height: auto; background-size: 100%; background-blend-mode: 0.5;">
+      <h1 style="margin: 3% 0% 3% 0%;">SERVICIOS</h1>
+      <div class="servicecontainer" style="text-align:center;">
+          <div class="serviceitem">
+            <a href="layouts/service.php" target="_blank"><img alt="SERVICE STANDARD" src="images/service standard.png" width="100" height="100"></a>
+            <h3>SERVICE STANDARD</h3>
+            <p>Mantenimiento rápido, revisión general</p>
+          </div>
+          <div class="serviceitem">
+            <a href="layouts/servicefull.php" target="_blank"><img alt="SERVICE FULL" src="images/service full.png" width="100" height="100"></a>
+            <h3>SERVICE FULL</h3>
+            <p>Servicio completo, revisión en detalle</p>
+          </div>
+          <div class="serviceitem">
+            <a href="layouts/tubelizado.php" target="_blank"><img alt="TUBELIZADO" src="images/tubelizado.png" width="100" height="100"></a>
+            <h3>TUBELIZADO</h3>
+            <p>En cualquier tipo de cubierta y aro</p>
+          </div>
+          <div class="serviceitem">
+            <a href="layouts/centrado.php" target="_blank"><img alt="CENTRADO DE RUEDAS" src="images/centrado de ruedas.png" width="100" height="100"></a>
+            <h3>CENTRADO DE RUEDAS</h3>
+            <p>Alineación y reparación de golpes</p>
+          </div>
+          <div class="serviceitem">
+            <a href="layouts/horquilla.php"><img alt="HORQUILLAS" src="images/service de horquilla.png" width="100" height="100"></a>
+            <h3>SERVICE DE HORQUILLAS</h3>
+            <p>Armado, reparación y engrasado</p>
+          </div>
+          <div class="serviceitem">
+            <a href="#"><img alt="VER MAS" src="images/ver mas.png" width="100" height="auto"></a>
+            <h3>VER MAS</h3>
+            <p>Conoce más servicios...</p>
+          </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ////////////// SLIDESHOW DE BICICLETAS DISPONIBLES ////////////// -->
+  <div class="pcontainer" style="text-align:center;">
+    <h1>BICICLETAS DISPONIBLES</h1>
+  </div>
+    <!-- Container for the image gallery -->
+    <div class="ncontainer">
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img class="sshowimage" src="images/novedad1.png">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img class="sshowimage" src="images/novedad2.png">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img class="sshowimage" src="images/novedad3.png">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img class="sshowimage" src="images/novedad4.png">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img class="sshowimage" src="images/novedad5.png">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img class="sshowimage" src="images/novedad6.png">
+      </div>
+      <!-- Next and previous buttons -->
+      <div class="arrows">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!-- Image text -->
+    </div>
+    <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    <!-- Thumbnail images -->
+    <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="images/novedad1.png" style="width:50%" onclick="currentSlide(1)" alt="Platos y cadenas">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/novedad2.png" style="width:50%" onclick="currentSlide(2)" alt="Pedales">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/novedad3.png" style="width:50%" onclick="currentSlide(3)" alt="Cambios">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/novedad4.png" style="width:50%" onclick="currentSlide(4)" alt="Llantas">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/novedad5.png" style="width:50%" onclick="currentSlide(5)" alt="Frenos">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/novedad6.png" style="width:50%" onclick="currentSlide(6)" alt="Bujes">
+        </div>
+      </div>
+    </div>
+  <!-- MAPA 
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13403.176944314993!2d-68.8467196856133!3d-32.87716318094189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08e364f9bae5%3A0xd4eeacd8d95d30f!2sVendimiadores%20700-602%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1609819378007!5m2!1ses-419!2sar"
+   width="40%" height="400px" frameborder="0" style="border:0; padding: 10px 0 10px 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>-->
+  <!-- SCRIPTS -->
+  <script src="scripts/js.js"></script>
+</body>
+<!-- FOOTER -->
+<footer>
+  <div class="fcontainer">
+    <!-- VISTO RECIENTEMENTE-->
+    <div class="vistorecientemente">
+      <h5>VISTO RECIENTEMENTE</h5>
+    </div>
+    <!-- SUBFOOTER-->
+    <div class="sfcontainer">
+        <!-- REDES SOCIALES -->
+        <div class="redessociales">
+          <div>
+            <h5>REDES SOCIALES</h5>
+            <ul>
+              <li><a href=# title="Opens in a new browser window"
+                  target="_blank"><img
+                    src="images/facebook.png"
+                    alt="" width="32" height="32">Facebook</a></li>
+              <li><a href="#" title="Opens in a new browser window"
+                  target="_blank"><img
+                    src="images/instagram.png"
+                    alt="" width="32" height="32">Instragram</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- CATEGORIAS -->
+        <div>
+          <div>
+            <h5>CATEGORÍAS</h5>
+            <ul>
+              <li><a href="#">ACCESORIOS</a></li>
+              <li><a href="#">INDUMENTARIA</a></li>
+              <li><a href="#">COMPONENTES</a></li>
+              <li><a href="#">TALLER</a></li>
+              <li><a href="#">HIDRATACIÓN</a></li>
+              <li><a href="#">RUEDAS</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- SERVICIO AL CLIENTE-->
+        <div>
+          <div>
+            <h5>SERVICIO AL CLIENTE</h5>
+            <ul>
+              <li><a href="/customer-service/email-or-phone-us">CONTACTANOS</a></li>
+              <li><a href="/staticcontent/postageInfoPage.jsp">COSTOS DE ENVÍO</a></li>
+              <li><a href="/customer-service/returning-an-item">DEVOLVER UN PRODUCTO</a></li>
+              <li><a href="/customer-service/making-a-warranty-return">GARANTÍA</a></li>
+              <li><a href="/customer-service" class="more">VER MÁS</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- ACERCA DE NOSOTROS-->
+        <div>
+          <div>
+            <h5>ACERCA DE NOSOTROS</h5>
+            <ul>
+              <li><a href="/customer-service/store-showroom-details">QUIÉNES SOMOS</a></li>
+              <li><a href="http://hub.chainreactioncycles.com/events/" target="_blank"
+                  title="Opens in a new browser window" class="elink">EVENTOS</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- DATOS DE CUENTA-->
+        <div>
+          <div>
+            <div class="crcFooterNewsletterSlot"
+              onclick="callTrack('_trackEvent','','Click Promo','-FooterNewsletterSlot-Merchandiser Slot');">
+              <h5>REGISTRATE &amp; AHORRÁ</h5>
+              <p>ADQUIERE <strong>15% OFF</strong> EN TU PRIMER COMPRA. SÓLO PARA CLIENTES NUEVOS</p>
+            </div>
+          </div>
+          <div id="crcFooterNewsletterSignupContent" class="crcFooterNewsletterSignup">
+            <label for="crcNewsletterEmail" class="crcFooterNewsletterSignupPrompt">
+              Ingresá tu dirección de correo electrónico</label>
+            <input type="text" id="crcNewsletterEmail" class="email_id" bean="ProfileFormHandler.email"
+              autocomplete="off" autocapitalize="off" autocorrect="off" maxlength="100">
+            <div class="invalid_email footer_error_msg" style="display:none;">Your email address is not valid - please
+              enter in the correct format. (eg someone@somewhere.com)</div>
+            <div class="exceeds_length_email footer_error_msg" style="display:none;">Your email address exceeds our
+              limit. Please use a shorter email address to sign up.</div>
+            <a class="crcNewsletterSignupSubmit"
+              onclick="callTrack('_trackEvent','Newsletter Sign up','Confirm Signup','');displayFooterNewsletters();">
+              REGISTRATE</a>
+          </div>
+          <div class="crcFooterContentSlot">
+            <div class="footerPrivacyInfoDisclaimerSlot"
+              onclick="callTrack('_trackEvent','','Click Promo','-FooterPrivacyInfoDisclaimerSlot-Merchandiser Slot');">
+              Al registrarse usted acepta nuestros <a href="#" target="_blank">Términos y condiciones</a> y
+              <a href="#" target="_blank">políticas de privacidad.</a> </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</footer>
+</html>

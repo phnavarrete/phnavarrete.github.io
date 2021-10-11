@@ -121,13 +121,34 @@
   <div class="hcontainer">
       <!-- LOGO -->
       <div class="logo" style="width:auto;";>
-		  <h1 style="color:red"> SITIO EN CONSTRUCCIÓN </h1>
         <img src="images/mendoza.png">
       </div>
   </div>
+  <!-- PHP -->
+    <?php
+    // include 'config.php';
+    // 1) Conexion
+    //$conexion = mysqli_connect("localhost:3306", "usuario", "@a1b2c3@");
+    $conexion = mysqli_connect("127.0.0.1", "root", "");
+
+    mysqli_select_db($conexion, "prueba_cadenas");
+
+    // ) Almacenamos los datos del envío POST
+    // No se utiliza este paso en este caso puntual
+
+    // 2) Preparar la orden SQL
+    // Sintaxis SQL SELECT
+    // SELECT * FROM nombre_tabla
+    // => Selecciona todos los campos de la siguiente tabla
+    // SELECT campos_tabla FROM nombre_tabla
+    // => Selecciona los siguientes campos de la siguiente tabla
+    $consulta = 'SELECT * FROM bbdd_prueba_cadenas';
+
+    // 3) Ejecutar la orden y obtenemos los registros
+    $datos = mysqli_query($conexion, $consulta);
+    ?>
   <!-- SERVICIOS -->
   <div class="scontainer" style="text-align:center;">
-	  <h1 style="color:red"> SITIO EN CONSTRUCCIÓN </h1>
     <div style="background-image: url(images/cadenass.jpg); width: 100%; height: auto; background-size: 100%; background-blend-mode: 0.5;">
       <h1 style="margin: 3% 0% 3% 0%;">SERVICIOS</h1>
       <div class="servicecontainer" style="text-align:center;">
@@ -165,72 +186,71 @@
       </div>
     </div>
   </div>
-  <!-- SLIDESHOW DE NOVEDADES -->
+  <!-- ////////////// SLIDESHOW DE BICICLETAS DISPONIBLES ////////////// -->
   <div class="pcontainer" style="text-align:center;">
-  <h1>PRODUCTOS NUEVOS</h1>
+    <h1>BICICLETAS DISPONIBLES</h1>
   </div>
-  <!-- Container for the image gallery -->
-  <div class="ncontainer">
-    <!-- Full-width images with number text -->
-    <div class="mySlides">
-      <div class="numbertext">1 / 6</div>
-      <img class="sshowimage" src="images/novedad1.png">
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">2 / 6</div>
-      <img class="sshowimage" src="images/novedad2.png">
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">3 / 6</div>
-      <img class="sshowimage" src="images/novedad3.png">
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">4 / 6</div>
-      <img class="sshowimage" src="images/novedad4.png">
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">5 / 6</div>
-      <img class="sshowimage" src="images/novedad5.png">
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">6 / 6</div>
-      <img class="sshowimage" src="images/novedad6.png">
-    </div>
-    <!-- Next and previous buttons -->
-    <div class="arrows">
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    <!-- Image text -->
-  </div>
-  <div class="caption-container">
-	  <h1 style="color:red"> SITIO EN CONSTRUCCIÓN </h1>
-      <p id="caption"></p>
-    </div>
-  <!-- Thumbnail images -->
-  <div class="row">
-      <div class="column">
-        <img class="demo cursor" src="images/novedad1.png" style="width:50%" onclick="currentSlide(1)" alt="Platos y cadenas">
+    <!-- Container for the image gallery -->
+    <div class="ncontainer">
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img class="sshowimage" src="images/novedad1.png">
       </div>
-      <div class="column">
-        <img class="demo cursor" src="images/novedad2.png" style="width:50%" onclick="currentSlide(2)" alt="Pedales">
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img class="sshowimage" src="images/novedad2.png">
       </div>
-      <div class="column">
-        <img class="demo cursor" src="images/novedad3.png" style="width:50%" onclick="currentSlide(3)" alt="Cambios">
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img class="sshowimage" src="images/novedad3.png">
       </div>
-      <div class="column">
-        <img class="demo cursor" src="images/novedad4.png" style="width:50%" onclick="currentSlide(4)" alt="Llantas">
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img class="sshowimage" src="images/novedad4.png">
       </div>
-      <div class="column">
-        <img class="demo cursor" src="images/novedad5.png" style="width:50%" onclick="currentSlide(5)" alt="Frenos">
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img class="sshowimage" src="images/novedad5.png">
       </div>
-      <div class="column">
-        <img class="demo cursor" src="images/novedad6.png" style="width:50%" onclick="currentSlide(6)" alt="Bujes">
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img class="sshowimage" src="images/novedad6.png">
+      </div>
+      <!-- Next and previous buttons -->
+      <div class="arrows">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!-- Image text -->
+    </div>
+    <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    <!-- Thumbnail images -->
+    <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="images/novedad1.png" style="width:50%" onclick="currentSlide(1)" alt="Platos y cadenas">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/novedad2.png" style="width:50%" onclick="currentSlide(2)" alt="Pedales">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/novedad3.png" style="width:50%" onclick="currentSlide(3)" alt="Cambios">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/novedad4.png" style="width:50%" onclick="currentSlide(4)" alt="Llantas">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/novedad5.png" style="width:50%" onclick="currentSlide(5)" alt="Frenos">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/novedad6.png" style="width:50%" onclick="currentSlide(6)" alt="Bujes">
+        </div>
       </div>
     </div>
-  </div>
-  <!-- MAPA -->
+  <!-- MAPA 
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13403.176944314993!2d-68.8467196856133!3d-32.87716318094189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08e364f9bae5%3A0xd4eeacd8d95d30f!2sVendimiadores%20700-602%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1609819378007!5m2!1ses-419!2sar"
-   width="40%" height="400px" frameborder="0" style="border:0; padding: 10px 0 10px 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+   width="40%" height="400px" frameborder="0" style="border:0; padding: 10px 0 10px 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>-->
   <!-- SCRIPTS -->
   <script src="scripts/js.js"></script>
 </body>
